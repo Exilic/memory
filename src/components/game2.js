@@ -3,7 +3,7 @@ import {cardNames, cardPairs} from "./cards";
 import {MemorialCard} from "./MemorialCard";
 import "./game2.css";
 import {photographers} from "./photographers";
-import {PermamentFeatures} from "./PermanentFeatures";
+import {PermanentFeatures} from "./PermanentFeatures";
 
 export const Game2 = () => {
     const amount= 20;
@@ -75,7 +75,15 @@ export const Game2 = () => {
     const sideContent = () => {
         return (
             <div>
-                <h2>Game</h2>
+                <p>Connect with me on LinkedIn:</p>
+                <div className="padding" >
+                    <a className="link" href="https://www.linkedin.com/in/tobiasengberg/" target="_blank" rel="noreferrer">www.linkedin.com/in/tobiasengberg</a>
+                </div>
+                <p>Repository for the code:</p>
+                <div className="padding" >
+                    <a className="link" href="https://github.com/Exilic/memory" target="_blank" rel="noreferrer">GitHub – Memory</a>
+                </div>
+                <br/>
                 <h3>Photo credits on Unsplash</h3>
                 <ul>
                     {photographers.map(photographer => (
@@ -106,7 +114,7 @@ export const Game2 = () => {
         setTurns(0);
     };
     return (
-        <PermamentFeatures overview={false} sideContent={sideContent()}>
+        <PermanentFeatures overview={false} sideContent={sideContent()}>
             <div id="ContentArea">
                 <div id="Info">
                     <h3>Memory challenge. Try to match image pairs by mouse clicking squares.</h3>
@@ -124,6 +132,6 @@ export const Game2 = () => {
                     )}
                 </div>
             </div>
-        </PermamentFeatures>
+        </PermanentFeatures>
     );
 }

@@ -1,5 +1,5 @@
 
-export const PermamentFeatures = ({children, setId, overview, sideContent}) => {
+export const PermanentFeatures = ({children, setId, overview, sideContent}) => {
     return (
         <div id="sitebase">
             <div id="sidebar">
