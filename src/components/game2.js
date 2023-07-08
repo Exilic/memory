@@ -117,7 +117,7 @@ export const Game2 = () => {
         <PermanentFeatures overview={false} sideContent={sideContent()}>
             <div id="ContentArea">
                 <div id="Info">
-                    <h3>Memory challenge. Try to match image pairs by mouse clicking squares.</h3>
+                    <h3>Try to match image pairs by mouse clicking squares. Continue clicking when lost.</h3>
                 </div>
                 <div id="Game">
                     {solved !== amount ? (
