@@ -8,8 +8,9 @@ export const PermanentFeatures = ({children, setId, overview, sideContent}) => {
                     <p className="uppercase">By Tobias Engberg</p>
                 </div>
                 <div>
-
+                    <a href="https://exilic.github.io" className="link right">&larr; Back to overview</a>
                 </div>
+
                 <div>
                     {sideContent}
                 </div>
